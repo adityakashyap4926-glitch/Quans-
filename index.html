@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quans AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="auth">
+  <h1>Quans</h1>
+
+  <button onclick="showSignup()">Create Account</button>
+  <button onclick="showLogin()">Login</button>
+
+  <div id="signupForm" class="hidden">
+    <input type="text" id="name" placeholder="Full Name">
+    <input type="date" id="dob">
+
+    <select id="gender">
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+
+    <input type="file" id="image">
+    <button onclick="signup()">OK</button>
+  </div>
+
+  <div id="loginForm" class="hidden">
+    <input type="text" id="loginName" placeholder="Enter Name">
+    <button onclick="enterChat()">Login</button>
+  </div>
+</div>
+
+<div id="chatUI" class="hidden">
+  <h2>Quans</h2>
+
+  <div class="mode">
+    <button onclick="setMode('text')">Written</button>
+    <button onclick="setMode('cr')">CR</button>
+  </div>
+
+  <div id="chatBox"></div>
+
+  <input type="text" id="msg" placeholder="Ask something...">
+  <button onclick="sendMsg()">Send</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

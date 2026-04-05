@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* LOGIN */
+#auth {
+  background: #561C24;
+  color: white;
+  height: 100vh;
+  text-align: center;
+  padding-top: 50px;
+}
+
+button {
+  background: #6D2932;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+}
+
+/* CHAT */
+#chatUI {
+  background: #E8D8C4;
+  height: 100vh;
+  padding: 10px;
+}
+
+#chatBox {
+  height: 60vh;
+  overflow-y: auto;
+  background: white;
+  padding: 10px;
+}
+
+.hidden {
+  display: none;
+}
